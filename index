@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG53TDTKL6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG53TDTKL6');
+    // Force Analytics to track slider section views natively
+  window.addEventListener('hashchange', function() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'page_view', {
+        page_title: document.title + ' - ' + window.location.hash,
+        page_location: window.location.href,
+        page_path: window.location.pathname + window.location.hash
+      });
+    }
+  });
+</script>
+ 
+  <meta charset="UTF-8">
+ <title>Landmark Construction & Roofing | Top Roofers SF & Peninsula</title>
+   <link rel="icon" type="image/x-icon" href="favicon-32x32 L.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Universal Link Preview Settings (Kept completely separate from design layout) --> 
+<meta property="og:title" content="Landmark Construction & Roofing | Top-Rated SF & Peninsula Roofers">
+<meta property="og:image" content="Wooden House.jpg"> 
+<meta property="og:url" content="https://thelandmarkinc.com">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Calibri, Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      position: relative;
+    }
+        .section-title {
+      font-family: 'Ink Free', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }
+    /* Navigation Navbar */
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 0;
+    }
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+    .nav-link {
+      color: #222 !important;
+      margin: 0 8px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #008000 !important;
+    }
+    .nav-link.active {
+      color: #008000 !important;
+      border-bottom: 2px solid #008000;
+    }
+header {
+  background: transparent;
+  padding: 0;  /* changed from 8px */
+  text-align: center;
+  margin-bottom: 10;  /* changed from 10px */
+}
+   
+    .main-image {
+      width: 100%;
+      max-width: 100vw;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .services, .project-list, .contact, .licenses, .about, .service-areas {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #eaeaea;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .service {
+      min-width: 220px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      text-align: center;
+      flex: 1 1 220px;
+    }
+    .service-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #008000;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+    }
+   .licenses p {
+  margin: 6px 0;
+  text-align: center;
+}
+.about p {
+  margin: 6px 0;
+  text-align: left;
+}
+    .service-areas p {
+  margin: 6px 0;
+  text-align: left;
+}
+    .project-list-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 24px 0 0 0;
+    }
+    .project-list-images img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+    .badge-list {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .badge-list img {
+      height: 60px;
+      object-fit: contain;
+    }
+       .custom-bg-image {
+      width: 100%;
+      height: 588px;
+      background-image: url('Wooden House.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top 45px;
+      background-attachment: fixed;
+      margin: 0 auto;
+    }
+
+    /* === FLOATING CONTACT US BUTTON (BRAND GREEN) === */
+    #floatingContactBtn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999; /* Sits above page content, right below modal-overlay (1000) */
+      padding: 12px 22px;
+      background-color: #008000; /* Matches your Landmark green */
+      color: #ffffff;
+      font-family: Calibri, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    #floatingContactBtn:hover {
+      background-color: #006400; /* Matches your submit button hover */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    #floatingContactBtn:active {
+      transform: translateY(0);
+    }
+      @media (max-width: 600px) {
+      .service-list, .project-list-images, .badge-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
+      #floatingContactBtn {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 18px;
+        font-size: 15px;
+      }
+    }
+
+    /* Full screen dark/translucent background overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0;
+      width: 100vw; 
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;           
+      align-items: center;     
+      justify-content: center;  
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .modal-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* The actual white box containing the form */
+    .modal-content {
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px 32px 24px 32px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+      min-width: 320px;
+      max-width: 90vw;
+      position: relative;
+    }
+
+    /* Form input spacing */
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      display: block;
+      padding: 8px;
+    }
+    
+    /* The Close "X" Button */
+    .close-btn {
+      position: absolute;
+      right: 16px;
+      top: 12px;
+      font-size: 26px;
+      cursor: pointer;
+      color: #333;
+      line-height: 1;
+      z-index: 1010;
+    }
+    .close-btn:hover {
+      color: #008000;
+    }
+
+    /* Style for your specific submit button */
+    #contactForm button[type="submit"] {
+      width: 100%;
+      background-color: #008000;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    #contactForm button[type="submit"]:hover {
+      background-color: #006400;
+    }
+
+    /* Carousel image styling */ 
+    .carousel-img { 
+      width: 100%; 
+      height: 240px; 
+      object-fit: cover; 
+    }
+
+    /* --- CARD POP-UP & TAP ANIMATIONS --- */
+    @media (hover: hover) {
+      .service:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .service:active {
+      transform: translateY(2px) scale(0.98);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* --- HOVER CURSOR & TOOLTIP --- */
+    .service-clickable {
+      position: relative; 
+      cursor: pointer !important; 
+    }
+
+    .service-clickable::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 110%;                
+      left: 50%;
+      transform: translateX(-50%); 
+      background-color: #333;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      white-space: nowrap;
+      z-index: 999;                
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .service-clickable:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#home"><img src="Landmark website logo 1020.jpg" alt="Landmark Construction & Roofing, San Bruno Ca 94066"></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+         <li class="nav-item">
+  <a class="nav-link" id="contactLink" href="#">Contact Us</a>
+</li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+  
+  <div class="custom-bg-image"></div>
+  
+  <section class="services" id="services">
+
+    <div class="section-title">Our Services</div>
+    <div class="service-list">
+      
+      <!-- 1. Home Improvement Section -->
+      <div class="service">
+        <div class="service-title">Home Improvement</div>
+        <ul>
+          <li>Kitchen Renovations</li>
+          <li>Bathroom Renovations</li>
+          <li>Dry-rot Repairs</li>
+        </ul>
+        <div id="homeCarousel" class="carousel slide mt-3" data-bs-ride="carousel"> 
+          <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+          </div> 
+          <div class="carousel-inner"> 
+            <div class="carousel-item active"><img src="Bacon Kitchen.webp" class="d-block w-100 carousel-img" alt="Open Concept Home Remodel in San Francisco by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Forest Hill 1.jpg" class="d-block w-100 carousel-img" alt="Open Concept Kitchen Remodel in San Francisco by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Bacon Master Ba.jpg" class="d-block w-100 carousel-img" alt="Open Concept Home Remodel in San Francisco by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+          </div> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button> 
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button> 
+        </div>
+      </div>
+
+      <!-- 2. Roofing Section (FIXED: Uses class="service" and inline hover cursor) -->
+     <div class="service service-clickable" 
+     style="cursor: pointer;"
+     onclick="window.location.href='roofing.html';" 
+     data-tooltip="Click for more roofing services">
+        
+        <div class="service-title">Roofing</div>
+        <ul>
+          <li>Complete Replacements</li>
+          <li>Maintenance & Coating</li>
+          <li>Repairs</li>
+        </ul>
+        <div id="roofingCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover"> 
+          <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#roofingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Roof Slide 1"></button> 
+            <button type="button" data-bs-target="#roofingCarousel" data-bs-slide-to="1" aria-label="Roof Slide 2"></button> 
+            <button type="button" data-bs-target="#roofingCarousel" data-bs-slide-to="2" aria-label="Roof Slide 3"></button> 
+          </div> 
+          <div class="carousel-inner"> 
+            <div class="carousel-item active"><img src="22nd ave.JPG" class="d-block w-100 carousel-img" alt="Complete reroof Certainteed Modified Bitumen roof by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Roof Coat.JPG" class="d-block w-100 carousel-img" alt="Epoxy roof coating on SBS roof by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Castlemont.JPG" class="d-block w-100 carousel-img" alt="Complete reroof Certainteed Landmark shingles by Landmark Construction & Roofing, San Bruno Ca 94066"></div> 
+          </div> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#roofingCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button> 
+          <button class="carousel-control-next" type="button" data-bs-target="#roofingCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button> 
+        </div>      
+      </div>
+
+    <!-- 3. Inspections Section (FIXED: Uses class="service" and inline hover cursor) -->
+    <div class="service service-clickable" 
+     style="cursor: pointer;"
+     onclick="window.location.href='inspections.html';" 
+     data-tooltip="Click to view all inspection types">
+      
+    <div class="service-title">Inspections</div>
+        <ul>
+          <li>Roof</li>
+          <li>General Property</li>
+          <li>SF (RECO) Energy and Water</li>
+        </ul>
+        <div id="inspectionsCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" onclick="event.stopPropagation();"> 
+          <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#inspectionsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="inspections Slide 1"></button> 
+            <button type="button" data-bs-target="#inspectionsCarousel" data-bs-slide-to="1" aria-label="inspections Slide 2"></button> 
+            <button type="button" data-bs-target="#inspectionsCarousel" data-bs-slide-to="2" aria-label="inspections Slide 3"></button> 
+          </div> 
+          <div class="carousel-inner"> 
+            <div class="carousel-item active"><img src="Miraluna Way Roof.JPG" class="d-block w-100 carousel-img" alt="Roof Inspection by Landmark Inspection, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Terrace Home.JPG" class="d-block w-100 carousel-img" alt="Home Inspection by Landmark Inspection, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Drywood.JPG" class="d-block w-100 carousel-img" alt="Home Inspection by Landmark Inspection, San Bruno Ca 94066"></div> 
+          </div> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#inspectionsCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button> 
+          <button class="carousel-control-next" type="button" data-bs-target="#inspectionsCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button> 
+        </div>      
+      </div>
+
+      <!-- 4. Termite Section (FIXED: Identical standard sibling block) -->
+      <div class="service">
+        <div class="service-title">Termite</div>
+        <ul>
+          <li>Inspections</li>
+          <li>Chemical Treatments</li>
+          <li>Structural Repairs</li>
+        </ul>
+        <div id="termiteCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover"> 
+          <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#termiteCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="termite Slide 1"></button> 
+            <button type="button" data-bs-target="#termiteCarousel" data-bs-slide-to="1" aria-label="termite Slide 2"></button> 
+            <button type="button" data-bs-target="#termiteCarousel" data-bs-slide-to="2" aria-label="termite Slide 3"></button> 
+          </div> 
+          <div class="carousel-inner"> 
+            <div class="carousel-item active"><img src="Subs.jpg" class="d-block w-100 carousel-img" alt="Termite Inspection by Landmark Structural, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="Pellets.JPG" class="d-block w-100 carousel-img" alt="Termite Inspection by Landmark Structural, San Bruno Ca 94066"></div> 
+            <div class="carousel-item"><img src="WBB.JPG" class="d-block w-100 carousel-img" alt="Termite Inspection by Landmark Structural, San Bruno Ca 94066"></div> 
+          </div> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#termiteCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button> 
+          <button class="carousel-control-next" type="button" data-bs-target="#termiteCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button> 
+        </div>
+      </div>
+
+    </div> <!-- Closes service-list -->
+</section> <!-- Closes services -->
+
+<section class="about" id="about">
+  <div class="section-title">About Us</div>
+  <p>Since 2009, Landmark has been a trusted family-owned construction, roofing, and property inspection company serving the San Francisco Bay Area, focusing on safety, durability, and client peace of mind.</p>
+</section>
+ 
+<section class="licenses" id="licenses"> 
+  <div class="section-title">Licenses &amp; Certifications</div> 
+  <div class="badge-list">
+
+    <!-- CSLB Logo --> 
+    <div class="service service-clickable" data-tooltip="Verify CSLB License"> 
+      <a href="https://ca.gov" target="_blank"> 
+        <img src="cslb_logo.gif" alt="CSLB Logo by Landmark Construction & Roofing, San Bruno Ca 94066"> 
+        <p>CSLB #1123423</p> 
+      </a> 
+    </div> 
+
+    <!-- SPCB Logo --> 
+    <div class="service service-clickable" data-tooltip="Verify SPCB Registration"> 
+      <a href="https://ca.gov" target="_blank"> 
+        <img src="SPCB-Logo.jpg" alt="SPCB Logo by Landmark Construction & Roofing, San Bruno Ca 94066"> 
+        <p>SPCB #9841</p> 
+      </a> 
+    </div> 
+
+    <!-- ICC Logo --> 
+    <div class="service service-clickable" data-tooltip="Verify ICC Certification"> 
+      <a href="https://iccsafe.org" target="_blank"> 
+        <img src="ICC logo.png" alt="ICC logo by Landmark Construction & Roofing, San Bruno Ca 94066"> 
+        <p>ICC #8037187</p> 
+      </a> 
+    </div> 
+
+    <!-- SFDBI Logo --> 
+    <div class="service service-clickable" data-tooltip="Verify SFDBI Compliance"> 
+      <a href="https://sf.gov" target="_blank"> 
+        <img src="Seal_of_SF.png" alt="Seal of SF by Landmark Construction & Roofing, San Bruno Ca 94066"> 
+        <p>SFDBI #389</p> 
+      </a> 
+    </div> 
+
+    <!-- Certainteed Credential Logo --> 
+    <div class="service service-clickable" data-tooltip="Verify Certification"> 
+      <a href="https://certainteed.com" target="_blank"> 
+        <img src="ShingleMaster PRO.jpg" alt="ShingleMaster PRO by Landmark Construction & Roofing Company"> 
+        <p></p> 
+      </a> 
+    </div> 
+
+  </div> <!-- Closes .badge-list -->
+</section>
+
+<!-- Service Areas Section -->
+<section class="service-areas" id="service-areas">
+  <div class="section-title">Service Areas</div>
+  
+  <p style="font-size: 15px; margin-bottom: 15px;">
+    <strong>Serving Homeowners and Businesses throughout the San Francisco Bay Area</strong>
+  </p>
+  <p style="font-size: 15px; margin-bottom: 15px;">
+    Landmark provides professional roofing and inspection services throughout the San Francisco Bay Area, including:
+  </p>
+  
+  <ul style="list-style-type: disc; margin: 0 0 20px 20px; padding: 0; font-size: 15px;">
+    <li>San Mateo County</li>
+    <li>San Francisco County</li>
+    <li>Santa Clara County</li>
+    <li>Alameda County</li>
+    <li>Contra Costa County</li>
+    <li>Marin County</li>
+  </ul>
+
+  <p style="font-size: 15px; margin-bottom: 10px;">
+    From roof repairs and inspections to complete roof replacements, our team helps property owners protect their investments with dependable roofing solutions.
+  </p>
+  <p style="font-size: 15px; font-weight: bold; margin-bottom: 0;">
+    Contact Landmark to schedule a roofing estimate in your area.
+  </p>
+</section>
+    
+  <style>
+  
+  /* ==========================================================================
+     LAYOUT STRUCTURE (Forcing one single row on desktop, stacking on mobile)
+     ========================================================================== */
+  /* All layout styles are strictly locked to #licenses to protect other sections */
+  
+  @media (min-width: 769px) {
+    #licenses .badge-list {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important; /* Forces single row on desktop */
+      justify-content: space-between !important;
+      align-items: center !important;
+      gap: 15px !important; 
+      padding: 25px 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    #licenses .badge-list .service {
+      flex: 1 1 0px !important; /* Equal column sizing */
+      min-width: 0 !important;   
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #licenses .badge-list {
+      display: flex !important;
+      flex-direction: column !important; /* Stacks layout on mobile screens */
+      align-items: center !important;
+       gap: 14px !important;
+      padding: 12px 0 !important;
+      margin-top: 10px !important;
+    }
+
+    #licenses .badge-list .service {
+      width: 100% !important;
+      text-align: center;
+      margin: 0 !important;
+    }
+
+    #licenses .badge-list .service p {
+      margin-top: 4px !important;
+    }
+  }
+
+  /* Inner element restrictions isolated to #licenses */
+  #licenses .badge-list .service img {
+    max-width: 90px !important; 
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #licenses .badge-list .service p {
+    font-size: 11px !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap; 
+  }
+
+  #licenses .badge-list .service a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* Clean structural overrides isolated to #licenses */
+  #licenses .badge-list .service {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important; 
+    padding: 0;
+  }
+
+  @media (hover: hover) {
+    #licenses .badge-list .service:hover {
+      box-shadow: none !important; 
+    }
+  }
+  
+  #licenses .badge-list .service:active {
+    box-shadow: none !important;
+  }
+
+  .auto-color-text {
+      background: linear-gradient(
+          to right, 
+          #000000 0%, 
+          #0b3d16 20%, 
+          #1e7e34 40%, 
+          #00ff00 50%, 
+          #1e7e34 60%, 
+          #0b3d16 80%, 
+          #000000 100%
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      animation: multiGreenWave 5s linear infinite;
+  }
+
+  @keyframes multiGreenWave {
+      0% { background-position: 200% center; }
+      100% { background-position: -200% center; }
+  }
+  </style>
+</section>
+
+  <section class="follow us">
+    <div class="section-title"></div>
+    <div class="badge-list">
+      <!-- Replace src with your actual images, add alt text -->
+ <div style="text-align: center;">
+  <a href="https://www.instagram.com/landmarkcompany.sf">
+    <img src="instagram_PNG12.png" alt="Instagram Logo by Landmark Construction & Roofing, San Bruno Ca 94066" style="width:70px; height:auto;">
+      </a>
+</div> 
+      <div style="text-align: center;">
+  <a href="https://www.facebook.com/landmarkcompany.sf/">
+    <img src="Facebook Logo.png" alt="Facebook Logo by Landmark Construction & Roofing, San Bruno Ca 94066" style="width:55px; height:auto;">
+      </a>
+</div>  
+          <div style="text-align: center;">
+  <a href="https://www.yelp.com/biz/landmark-construction-san-bruno-8?osq=Landmark+Construction">
+      <img src="yelp.png" alt="yelp Logo by Landmark Construction & Roofing, San Bruno Ca 94066" style="width:50px; height:auto;">
+  </a>
+</div> 
+
+           <div style="text-align: center;">
+<a href="https://www.contractorsranked.com/roofers/san-bruno-ca" target="_blank" rel="noopener">
+  <img src="https://www.contractorsranked.com/badges/contractors-ranked-listed.svg" alt="Listed on ContractorsRanked" width="200" height="auto" loading="lazy" style="border:0;max-width:100%;height:auto" />
+</a>
+</div>
+      
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding: 24px 0; color: #888;">
+    &copy; 2026 Landmark Construction Company
+  </footer>
+
+    <!-- Your existing HTML content -->
+
+          <!-- Bootstrap 5 JavaScript Bundle with Popper (Required for Mobile Menu) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<!-- Unified Pop-Up Form, Floating Button & Anti-Scraping Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 0. Inject Floating Button & Modal onto every page automatically
+    if (!document.getElementById('contactModal')) {
+      const widgetHTML = `
+        <button id="floatingContactBtn" type="button" aria-label="Contact Us">
+          💬 Contact Us
+        </button>
+
+        <div id="contactModal" class="modal-overlay">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <form id="contactForm">
+              <h2>Contact Us</h2>
+              
+              <!-- Silent Honeypot Field (Traps Bots) -->
+              <input type="text" id="contactGotcha" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+
+              <input type="text" id="contactName" placeholder="Your Name" required>
+              <input type="email" id="contactEmail" placeholder="Your Email" required>
+              
+              <!-- Phone Field -->
+              <input 
+                type="tel" 
+                id="contactPhone" 
+                placeholder="Phone Number" 
+                required 
+                pattern="\\(\\d{3}\\) \\d{3}-\\d{4}" 
+                title="Please enter a valid phone number: (XXX) XXX-XXXX"
+              >
+              
+              <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+
+              <!-- Protected Contact Number (Assembled via JS to block scrapers) -->
+              <p class="form-phone-display">Call us directly: <span id="protectedPhone"></span></p>
+              
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      `;
+      document.body.insertAdjacentHTML('beforeend', widgetHTML);
+    }
+
+    // Assemble Phone Number Dynamically (Hidden from raw HTML scrapers)
+    const a = "650", b = "273", c = "3008";
+    const phoneEl = document.getElementById('protectedPhone');
+    if (phoneEl) {
+      phoneEl.innerHTML = `<a href="tel:+1${a}${b}${c}">(${a}) ${b}-${c}</a>`;
+    }
+
+    const contactLink = document.getElementById('contactLink');
+    const floatingBtn = document.getElementById('floatingContactBtn');
+    const contactModal = document.querySelector('.modal-overlay');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Helper to close Bootstrap mobile menu safely
+    function closeMobileMenu() {
+      const navbarCollapse = document.getElementById('navbarNav');
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+        const togglerBtn = document.querySelector('.navbar-toggler');
+        if (togglerBtn) {
+          togglerBtn.setAttribute('aria-expanded', 'false');
+          togglerBtn.classList.add('collapsed');
+        }
+      }
+    }
+
+    // 1. Core Event Listeners (Always active if modal and close button exist)
+    if (contactModal && closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        contactModal.classList.remove('is-open'); 
+      });
+
+      window.addEventListener('click', (e) => {
+        if (e.target === contactModal) {
+          contactModal.classList.remove('is-open'); 
+        }
+      });
+    }
+    
+    // 2A. Regular Top Nav Link Click (Opens immediately on ANY page without redirecting)
+    if (contactLink && contactModal) {
+      contactLink.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        contactModal.classList.add('is-open'); 
+        closeMobileMenu();
+      });
+    }
+
+    // 2B. Floating Button Click (Opens immediately on ANY page)
+    if (floatingBtn && contactModal) {
+      floatingBtn.addEventListener('click', () => {
+        contactModal.classList.add('is-open');
+        closeMobileMenu();
+      });
+    }
+
+    // 3. Cross-Page Redirect Checker (Runs smoothly on page landing if ?openContact=true is in URL)
+    if (contactModal) {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('openContact') === 'true') {
+        setTimeout(() => {
+          requestAnimationFrame(() => {
+            contactModal.classList.add('is-open'); 
+          });
+        }, 200); 
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    }
+
+    // 4. Smoothly scroll to inner section titles and auto-close the Bootstrap mobile menu
+    document.querySelectorAll('.navbar-nav .nav-link:not(#contactLink)').forEach(link => {
+      link.addEventListener('click', (e) => {
+        let targetId = link.getAttribute('href');
+        if (!targetId) return;
+
+        if (targetId.includes('index.html#')) {
+          targetId = targetId.substring(targetId.indexOf('#'));
+        }
+
+        if (!targetId.startsWith('#')) return;
+
+        const targetSection = document.querySelector(targetId);
+        const navbar = document.querySelector('.navbar');
+
+        if (targetSection && navbar) {
+          e.preventDefault(); 
+
+          const innerTitle = targetSection.querySelector('.section-title, .pricing-title, h2, h3');
+          const elementToScrollTo = innerTitle ? innerTitle : targetSection;
+
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = elementToScrollTo.getBoundingClientRect().top + window.scrollY;
+          const extraBreathingRoom = 25;
+
+          window.scrollTo({
+            top: targetPosition - navHeight - extraBreathingRoom,
+            behavior: 'smooth'
+          });
+        }
+
+        closeMobileMenu();
+      });
+    });
+
+    // FIX FOR CROSS-PAGE ARRIVALS: Runs when arriving from pricing.html
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        const targetSection = document.querySelector(window.location.hash);
+        const navbar = document.querySelector('.navbar');
+
+        if (targetSection && navbar) {
+          const innerTitle = targetSection.querySelector('.section-title, .pricing-title, h2, h3');
+          const elementToScrollTo = innerTitle ? innerTitle : targetSection;
+
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = elementToScrollTo.getBoundingClientRect().top + window.scrollY;
+          const extraBreathingRoom = 25; 
+
+          setTimeout(() => {
+            window.scrollTo({
+              top: targetPosition - navHeight - extraBreathingRoom,
+              behavior: 'smooth'
+            });
+          }, 100);
+        }
+      }
+    });
+
+    // === INSERTED PAGE TRANSITION JAVASCRIPT BELOW ===
+    document.body.classList.add('page-loaded');
+
+    // Excludes #contactLink and tel: links so they open immediately instead of fading the page out
+    const links = document.querySelectorAll('a:not([href^="#"]):not([target="_blank"]):not(#contactLink):not([href^="tel:"])');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetUrl = link.href;
+
+        document.body.style.opacity = '0';
+
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, 400);
+      });
+    });
+    // === INSERTED PAGE TRANSITION JAVASCRIPT ABOVE ===
+
+    // Close Bootstrap menu when clicking section links on the same page
+    document.querySelectorAll('.navbar-nav .nav-link:not(#contactLink)').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+
+    // ========================================================
+    // === AUTO-FORMAT PHONE NUMBER AS USER TYPES =============
+    // ========================================================
+    const phoneInput = document.getElementById('contactPhone');
+    if (phoneInput) {
+      phoneInput.addEventListener('input', (e) => {
+        let input = e.target.value.replace(/\D/g, '');
+        input = input.substring(0, 10);
+        let size = input.length;
+        if (size === 0) {
+          e.target.value = input;
+        } else if (size < 4) {
+          e.target.value = '(' + input;
+        } else if (size < 7) {
+          e.target.value = '(' + input.substring(0, 3) + ') ' + input.substring(3);
+        } else {
+          e.target.value = '(' + input.substring(0, 3) + ') ' + input.substring(3, 6) + '-' + input.substring(6);
+        }
+      });
+    }
+
+    // ========================================================
+    // === FORM SUBMISSION CODE WITH HONEYPOT & OBFUSCATION ===
+    // ========================================================
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Block bots silently if hidden honeypot field is filled out
+        const gotchaInput = document.getElementById('contactGotcha');
+        if (gotchaInput && gotchaInput.value) {
+          this.reset();
+          if (contactModal) contactModal.classList.remove('is-open');
+          return;
+        }
+
+        const button = this.querySelector('button[type="submit"]');
+        button.disabled = true;
+        button.innerText = 'Sending...';
+
+        const formData = {
+          name: document.getElementById('contactName') ? document.getElementById('contactName').value : '',
+          email: document.getElementById('contactEmail') ? document.getElementById('contactEmail').value : '',
+          phone: document.getElementById('contactPhone') ? document.getElementById('contactPhone').value : '',
+          message: document.getElementById('contactMessage') ? document.getElementById('contactMessage').value : ''
+        };
+
+        try {
+                 // Obfuscated Formspree endpoint so scrapers cannot easily grep the URL
+        const endpoint = ['https://formspree.io', 'f', 'meednvwn'].join('/');
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+          alert('Success! Your message was sent straight to our inbox.');
+          this.reset();
+          if (contactModal) {
+            contactModal.classList.remove('is-open');
+          }
+        } else {
+          alert('Error: Failed to process form submission backend.');
+        }
+      } catch (error) {
+        alert('Network error. Check connection or backend settings.');
+      } finally {
+        button.disabled = false;
+        button.innerText = 'Send';
+      }
+    });
+  }
+
+  // Safe link checker to close the contact modal and menu
+  document.addEventListener('click', (e) => {
+    const clickedLink = e.target.closest('nav a, header a, .nav-links a, .nav-menu a');
+    
+    // ONLY run this if a link was clicked, and it is NOT your contact button/link
+    if (clickedLink && clickedLink !== contactLink && clickedLink !== floatingBtn) {
+      
+      // 1. Safely close the modal form when clicking other pages
+      const modal = document.getElementById('contactModal');
+      if (modal) {
+        modal.classList.remove('is-open');
+      }
+
+      // 2. Safely close the mobile menu
+      const mobileMenu = document.querySelector('.nav-links, .nav-menu, #mobile-menu, #nav-menu');
+      const hamburgerBtn = document.querySelector('.hamburger, .menu-toggle, #hamburger, .nav-toggle');
+      
+      if (mobileMenu) mobileMenu.classList.remove('open', 'active', 'is-open', 'show');
+      if (hamburgerBtn) hamburgerBtn.classList.remove('open', 'active', 'is-open', 'show');
+    }
+  });
+
+}); // End of DOMContentLoaded
+</script>
+  
+<script>
+  document.addEventListener('click', function (e) {
+    const modal = document.getElementById('contactModal');
+    if (!modal) return;
+
+    // 1. Open modal when clicking either the floating button OR the top menu Contact Us link
+    if (e.target.closest('#floatingContactBtn') || e.target.closest('#contactLink')) {
+      e.preventDefault();
+      modal.classList.add('is-open');
+    }
+
+    // 2. Close modal when clicking the 'X' button or the dark background overlay
+    if (e.target.closest('.close-btn') || e.target === modal) {
+      modal.classList.remove('is-open');
+    }
+  });
+</script>
+
+</body>
+</html>
