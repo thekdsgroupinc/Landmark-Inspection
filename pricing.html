@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://googletagmanager.com"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PG53TDTKL6');
+  </script>
+
+  <meta charset="UTF-8">
+  <title>Home, Roof, Termite &amp; SF RECO Inspection Pricing | Bay Area</title>
+  <link rel="icon" type="image/png" href="favicon-32x32 L.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Calibri, Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      position: relative;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+    body.page-loaded {
+      opacity: 1;
+    }
+    .section-title {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }    
+    /* Navigation Navbar Styles */
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px 0;
+    }
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+    .nav-link {
+      color: #222 !important;
+      margin: 0 8px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #008000 !important;
+    }
+    .nav-link.active {
+      color: #008000 !important;
+      border-bottom: 2px solid #008000;
+    }
+    /* 1. Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 2. Banner Style */
+    .main-banner {
+      background: #f4f4f4;
+      padding: 20px 0;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* 3. Spacing Fixes */
+    .main-banner h1 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .price-disclaimer {
+      font-family: Calibri, Arial, sans-serif;
+      font-weight: normal;
+      color: #000000;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      white-space: nowrap;
+    }
+
+    /* MATCHED SPACING FOR MAIN HEADINGS */
+    main.container h2 {
+      margin-top: -105px;
+      padding-top: 5px;
+    }
+
+    /* SAFE MATCHED SPACING FOR THE DISCLAIMER ONLY */
+    main.container p.text-muted {
+      margin-top: -105px;
+      padding-top: 5px;
+      color: #000000 !important;
+    }
+    
+    /* Fee Section Table Styles (Updated for Mobile Width) */
+    .fee-section {
+      max-width: 1140px;
+      width: 98%;
+      margin: 10px auto;
+      padding: 10px;
+      font-family: Calibri, Arial, sans-serif;
+      box-sizing: border-box;
+    }
+    .fee-section td, 
+    .fee-section th {
+      font-size: clamp(12px, 1.2vw, 18px); 
+      word-wrap: break-word;
+    }
+    .fee-table {
+      width: 100% !important;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .fee-table th, .fee-table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .fee-table th {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+    
+    .fee-table tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    .extra-fees .list-unstyled strong {
+      font-weight: normal;
+    }
+    
+    /* Custom Green Button - Normal State */
+    .btn-custom-green {
+      background-color: #008000 !important;
+      color: white !important;
+      border: none !important;
+    }
+
+    /* Custom Green Button - Hover State */
+    .btn-custom-green:hover {
+      background-color: #006600 !important;
+      color: white !important;
+      opacity: 0.9; 
+    }
+
+    /* === FLOATING CONTACT US BUTTON (BRAND GREEN) === */
+    #floatingContactBtn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      padding: 12px 22px;
+      background-color: #008000;
+      color: #ffffff;
+      font-family: Calibri, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    #floatingContactBtn:hover {
+      background-color: #006400;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    #floatingContactBtn:active {
+      transform: translateY(0);
+    }
+    @media (max-width: 600px) {
+      #floatingContactBtn {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 18px;
+        font-size: 15px;
+      }
+    }
+
+    /* === POP-UP MODAL & FORM STYLES === */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .modal-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal-content {
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px 32px 24px 32px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+      min-width: 320px;
+      max-width: 90vw;
+      position: relative;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      display: block;
+      padding: 8px;
+    }
+    .close-btn {
+      position: absolute;
+      right: 16px;
+      top: 12px;
+      font-size: 26px;
+      cursor: pointer;
+      color: #333;
+      line-height: 1;
+      z-index: 1010;
+    }
+    .close-btn:hover {
+      color: #008000;
+    }
+    #contactForm button[type="submit"] {
+      width: 100%;
+      background-color: #008000;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    #contactForm button[type="submit"]:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html#home">
+        <img src="Landmark website logo 1020.jpg" alt="Landmark Construction & Roofing, San Bruno Ca 94066">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"> <a class="nav-link" id="contactLink" href="/index.html?openContact=true">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<body>
+
+  <!-- 1. The Header Banner -->
+  <header class="main-banner">
+    <div class="container text-center">
+      <h1 class="responsive-header">San Francisco Bay Area Inspection Fees</h1>
+    </div>
+  </header>
+
+<main class="container my-1">
+    <div class="table-responsive"> <!-- Adds a scrollbar on mobile so it doesn't break -->
+        <table class="table fee-table">
+            <!-- Your table content -->
+        </table>
+    </div>
+</main>
+  
+ <!-- 2. The Main Content Area (Forced Mobile Font Scale Overrides) -->
+  <div class="container my-2 clearfix" itemscope itemtype="https://schema.org">
+    <p class="mb-2 text-muted small-mobile-text"><strong>*ALL PRICES ARE SUBJECT TO CHANGE*</strong></p>
+    <p class="mb-2 text-muted small-mobile-text">Serving Counties: Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara</p>
+  </div>
+
+       <!-- 3. The Pricing Table Section -->
+    <section class="fee-section" itemscope itemtype="https://schema.org">
+      <table class="fee-table">
+        <thead>
+          <tr>
+            <th>Property Size (sq.ft.)</th>
+            <th>General Property<br><small>(Single Family Residence)</small></th>
+            <th>WDO<br><small>(Termite)</small></th>
+            <th>Combo Package<br><small>(Property/ Roof/ Termite)</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr itemscope itemtype="https://schema.org">
+            <td>Under 1,499<meta itemprop="description" content="Under 1,499 sq.ft." /></td>
+            <td>
+              <meta itemprop="name" content="General Property Inspection (Under 1,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="650.00" />
+              $650.00
+            </td>
+            <td>
+              <meta itemprop="name" content="WDO Termite Inspection (Under 1,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="425.00" />
+              $425.00
+            </td>
+            <td>
+              <meta itemprop="name" content="Combo Package Inspection (Under 1,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="1075.00" />
+              $1,075.00
+            </td>
+          </tr>
+          <tr itemscope itemtype="https://schema.org">
+            <td>1,500 – 1,999<meta itemprop="description" content="1,500 – 1,999 sq.ft." /></td>
+            <td>
+              <meta itemprop="name" content="General Property Inspection (1,500 – 1,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="700.00" />
+              $700.00
+            </td>
+            <td>
+              <meta itemprop="name" content="WDO Termite Inspection (1,500 – 1,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="475.00" />
+              $475.00
+            </td>
+            <td>
+              <meta itemprop="name" content="Combo Package Inspection (1,500 – 1,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="1175.00" />
+              $1,175.00
+            </td>
+          </tr>
+          <tr itemscope itemtype="https://schema.org">
+            <td>2,000 – 2,499<meta itemprop="description" content="2,000 – 2,499 sq.ft." /></td>
+            <td>
+              <meta itemprop="name" content="General Property Inspection (2,000 – 2,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="800.00" />
+              $800.00
+            </td>
+            <td>
+              <meta itemprop="name" content="WDO Termite Inspection (2,000 – 2,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="525.00" />
+              $525.00
+            </td>
+            <td>
+              <meta itemprop="name" content="Combo Package Inspection (2,000 – 2,499 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="1325.00" />
+              $1,325.00
+            </td>
+          </tr>
+          <tr itemscope itemtype="https://schema.org">
+            <td>2,500 – 2,999<meta itemprop="description" content="2,500 – 2,999 sq.ft." /></td>
+            <td>
+              <meta itemprop="name" content="General Property Inspection (2,500 – 2,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="900.00" />
+              $900.00
+            </td>
+            <td>
+              <meta itemprop="name" content="WDO Termite Inspection (2,500 – 2,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="575.00" />
+              $575.00
+            </td>
+            <td>
+              <meta itemprop="name" content="Combo Package Inspection (2,500 – 2,999 sq.ft.)" />
+              <meta itemprop="priceCurrency" content="USD" />
+              <meta itemprop="price" content="1450.00" />
+              $1,450.00
+            </td>
+          </tr>
+          <tr>
+            <td>All other</td>
+            <td colspan="3">Call for pricing</td>
+          </tr>
+        </tbody>
+      </table>
+
+                        <!-- 4. Extra Services (Matches Section 3 Text Sizing dynamically on Mobile) -->
+      <div class="extra-fees mt-4">
+        <p><strong>Additional Inspection Services &amp; Fees:</strong></p>
+        
+        <!-- Row 1 -->
+        <div class="d-flex justify-content-between border-bottom py-2 fs-6" itemscope itemtype="https://schema.org">
+          <div class="text-start">
+            <span itemprop="name" class="d-inline-block small-mobile-text">Professional Roof Inspections:</span>
+          </div>
+          <div class="text-end small-mobile-text">
+            <meta itemprop="priceCurrency" content="USD" /><meta itemprop="price" content="250.00" />$250.00
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="d-flex justify-content-between border-bottom py-2 fs-6" itemscope itemtype="https://schema.org">
+          <div class="text-start">
+            <span itemprop="name" class="d-inline-block small-mobile-text">SF (RECO) Energy and Water Compliance Inspection:</span>
+          </div>
+          <div class="text-end small-mobile-text">
+            <meta itemprop="priceCurrency" content="USD" /><meta itemprop="price" content="425.00" />$425.00
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="d-flex justify-content-between border-bottom py-2 fs-6" itemscope itemtype="https://schema.org">
+          <div class="text-start">
+            <span itemprop="name" class="d-inline-block small-mobile-text">Insurance Notice Inspection:</span>
+          </div>
+          <div class="text-end small-mobile-text">
+            Call for pricing
+          </div>
+        </div>
+      </div>
+</section>
+
+   <!-- 5. Navigation Button (Offset padding added to align with pricing rows above) -->
+  <div class="mt-5 ps-md-5 text-center text-sm-start">
+    <a href="index.html" class="btn btn-custom-green">Back to Home</a>
+  </div>
+
+  <!-- Centered Payment Link Matched to Webpage Styles -->
+  <div class="mt-3 text-center">
+    <div style="
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      font-family: Calibri, Arial, sans-serif;
+    ">
+      <div style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
+        <a id="embedded-checkout-modal-checkout-button" target="_blank" data-url="https://square.link/u/rKWu2Fed?src=embd" href="https://square.link/u/rKWu2Fed?src=embed" style="
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 40px;
+          height: 40px;
+          color: #ffffff;
+          min-width: 212px;
+          background-color: #008000;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 6px;
+          transition: background-color 0.3s;
+        " onmouseover="this.style.backgroundColor='#006400'" onmouseout="this.style.backgroundColor='#008000'">Make a Payment</a>
+        
+        <p class="text-muted small mt-2 mb-3" style="text-align: center;">If you use a credit card, we will charge an additional 3% fee and any applicable taxes to help offset processing costs. This is not more than we pay in fees.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showCheckoutWindow(e) {
+      e.preventDefault();
+      const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
+      const title = 'Square Payment Links';
+      const topWindow = window.top ? window.top : window;
+      const dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX;
+      const dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : topWindow.screenY;
+      const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth;
+      const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight;
+      const h = height * .75;
+      const w = 500;
+      const systemZoom = width / topWindow.screen.availWidth;
+      const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+      const top = (height - h) / 2 / systemZoom + dualScreenTop;
+      const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+      if (window.focus) newWindow.focus();
+    }
+
+    document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
+      showCheckoutWindow(e);
+    });
+  </script>
+
+  <style>
+    @media (max-width: 576px) {
+      .small-mobile-text { font-size: 0.85em; }
+    }
+  </style>
+  
+  <!-- Bootstrap 5 JavaScript Bundle with Popper (Required for Mobile Menu) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Unified Pop-Up Form, Floating Button & Anti-Scraping Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Instantly reveal the pricing page elements once loaded
+      document.body.classList.add('page-loaded');
+
+      // 2. Inject Floating Button & Modal onto pricing.html automatically
+      if (!document.getElementById('contactModal')) {
+        const widgetHTML = `
+          <button id="floatingContactBtn" type="button" aria-label="Contact Us">
+            💬 Contact Us
+          </button>
+
+          <div id="contactModal" class="modal-overlay">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <form id="contactForm">
+                <h2>Contact Us</h2>
+                
+                <!-- Silent Honeypot Field (Traps Bots) -->
+                <input type="text" id="contactGotcha" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                
+                <!-- Phone Field -->
+                <input 
+                  type="tel" 
+                  id="contactPhone" 
+                  placeholder="Phone Number" 
+                  required 
+                  pattern="\\(\\d{3}\\) \\d{3}-\\d{4}" 
+                  title="Please enter a valid phone number: (XXX) XXX-XXXX"
+                >
+                
+                <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+
+                <!-- Protected Contact Number (Assembled via JS to block scrapers) -->
+                <p class="form-phone-display">Call us directly: <span id="protectedPhone"></span></p>
+                
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', widgetHTML);
+      }
+
+      // 3. Assemble Phone Number Dynamically
+      const a = "650", b = "273", c = "3008";
+      const phoneEl = document.getElementById('protectedPhone');
+      if (phoneEl) {
+        phoneEl.innerHTML = `<a href="tel:+1${a}${b}${c}">(${a}) ${b}-${c}</a>`;
+      }
+
+      const contactLink = document.getElementById('contactLink');
+      const floatingBtn = document.getElementById('floatingContactBtn');
+      const contactModal = document.getElementById('contactModal');
+
+      function closeMobileMenu() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          navbarCollapse.classList.remove('show');
+          const togglerBtn = document.querySelector('.navbar-toggler');
+          if (togglerBtn) {
+            togglerBtn.setAttribute('aria-expanded', 'false');
+            togglerBtn.classList.add('collapsed');
+          }
+        }
+      }
+
+      // 4. Intercept link clicks safely (ignores #contactLink and tel: links so pop-ups don't fade out)
+      const links = document.querySelectorAll('a:not([target="_blank"]):not(#contactLink):not([href^="tel:"])');
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          if (!href || href === '#' || href.startsWith('#') || href.startsWith('javascript:')) {
+            return; 
+          }
+
+          e.preventDefault();
+          const targetUrl = link.href;
+          document.body.style.opacity = '0';
+
+          setTimeout(() => {
+            window.location.href = targetUrl;
+          }, 400); 
+        });
+      });
+
+      // 5. Auto-format phone number as user types
+      const phoneInput = document.getElementById('contactPhone');
+      if (phoneInput) {
+        phoneInput.addEventListener('input', (e) => {
+          let input = e.target.value.replace(/\D/g, '');
+          input = input.substring(0, 10);
+          let size = input.length;
+          if (size === 0) {
+            e.target.value = input;
+          } else if (size < 4) {
+            e.target.value = '(' + input;
+          } else if (size < 7) {
+            e.target.value = '(' + input.substring(0, 3) + ') ' + input.substring(3);
+          } else {
+            e.target.value = '(' + input.substring(0, 3) + ') ' + input.substring(3, 6) + '-' + input.substring(6);
+          }
+        });
+      }
+
+      // 6. Form submission with honeypot & obfuscated Formspree URL
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const gotchaInput = document.getElementById('contactGotcha');
+          if (gotchaInput && gotchaInput.value) {
+            this.reset();
+            if (contactModal) contactModal.classList.remove('is-open');
+            return;
+          }
+
+          const button = this.querySelector('button[type="submit"]');
+          button.disabled = true;
+          button.innerText = 'Sending...';
+
+          const formData = {
+            name: document.getElementById('contactName') ? document.getElementById('contactName').value : '',
+            email: document.getElementById('contactEmail') ? document.getElementById('contactEmail').value : '',
+            phone: document.getElementById('contactPhone') ? document.getElementById('contactPhone').value : '',
+            message: document.getElementById('contactMessage') ? document.getElementById('contactMessage').value : ''
+          };
+
+          try {
+            const endpoint = ['https://formspree.io', 'f', 'meednvwn'].join('/');
+            const response = await fetch(endpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+              alert('Success! Your message was sent straight to our inbox.');
+              this.reset();
+              if (contactModal) contactModal.classList.remove('is-open');
+            } else {
+              alert('Error: Failed to process form submission backend.');
+            }
+          } catch (error) {
+            alert('Network error. Check connection or backend settings.');
+          } finally {
+            button.disabled = false;
+            button.innerText = 'Send';
+          }
+        });
+      }
+
+         // 7. Reliable Open & Close Modal Listener
+      document.addEventListener('click', function (e) {
+        if (!contactModal) return;
+
+        // Open when clicking floating button OR top nav Contact Us link
+        if (e.target.closest('#floatingContactBtn') || e.target.closest('#contactLink')) {
+          e.preventDefault();
+          contactModal.classList.add('is-open');
+          closeMobileMenu();
+        }
+
+        // Close when clicking 'X' or outside the white box
+        if (e.target.closest('.close-btn') || e.target === contactModal) {
+          contactModal.classList.remove('is-open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
